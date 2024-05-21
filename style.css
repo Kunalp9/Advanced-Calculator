@@ -1,0 +1,252 @@
+body {
+    display: flex;
+    background-image: url('media/background.jpg');
+    background-color: rgb(19, 0, 0);
+    background-size: cover;
+    background-position-y: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    position: relative;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    justify-content: center;
+}
+
+
+
+
+.transparent-box {
+    background-color: rgba(0, 0, 0,1); 
+    height: 25em;
+    width: 40rem;
+    padding: 10px;
+    position: absolute;
+    top: 100px;
+    border-bottom: 0;
+    border-radius: 15px;
+    backdrop-filter: blur(10px);
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.transparentBoxThemeLight{
+    background-color: rgb(223, 221, 221); 
+    height: 25em;
+    width: 40rem;
+    padding: 10px;
+    position: absolute;
+    top: 100px;
+    border-bottom: 0;
+    border-radius: 15px;
+    backdrop-filter: blur(10px);
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.transparent-box2{
+    z-index: -2;
+    background-color: rgba(0, 0, 0, 0.3); 
+    height: 25.5em;
+    width: 39rem;
+    padding: 10px;
+    position: absolute;
+    top: 100px;
+    border-bottom: 0;
+    border-radius: 15px;
+    backdrop-filter: blur(10px);
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.transparent-box2LightTheme{
+    z-index: -2;
+    background-color: rgba(222, 219, 219, 0.3); 
+    height: 25.5em;
+    width: 39rem;
+    padding: 10px;
+    position: absolute;
+    top: 100px;
+    border-bottom: 0;
+    border-radius: 15px;
+    backdrop-filter: blur(10px);
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+
+.display{
+    background-color: rgba(0, 0, 0, 0.7);
+    width: 100%;
+    height: 30%;
+    padding: 1em;
+    margin:0;
+    border-radius: 20px 20px 0 0;
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+}
+
+.display-theme-light{
+    background-color: rgba(237, 234, 234, 0.7);
+    width: 100%;
+    height: 30%;
+    padding: 1em;
+    margin:0;
+    border-radius: 20px 20px 0 0;
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    column-gap: 0.5em;
+}
+
+#inputBox #inputNumber{
+    background-color: black;
+    border: 0;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    border-radius: 20px 20px 0 0;
+    border-color: black;
+    outline: none;
+    font-size: 1.5em;
+    color: white;
+    padding: 2em 1em 1em 2em;
+}
+
+/* .inputBoxThemeLight {
+    background-color: grey;
+    border: 0;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    border-radius: 20px 20px 0 0;
+    border-color: black;
+    outline: none;
+    font-size: 1.5em;
+    color: white;
+    padding: 2em 1em 1em 2em;
+} */
+
+#outputBox #output{
+    background-color: black;
+    text-align: end;
+    border: 0;
+    width: 100%;
+    height: 100%;
+    color: grey;
+    margin: 0;
+    border-radius: 20px 20px 0 0;
+    border-color: black;
+    outline: none;
+    font-size: 1.5em;
+    padding: 2em 1em 1em 2em;    
+}
+
+
+
+
+/* For Chrome and Safari  */ 
+          
+input[type="number"]::-webkit-outer-spin-button, 
+input[type="number"]::-webkit-inner-spin-button  
+{ 
+    -webkit-appearance: none; 
+    margin: 0; 
+} 
+
+
+
+
+.hruler{
+    background-color: rgb(110, 101, 101);
+    margin: 0 10px;
+    height: 1px;
+    border: 0;
+}
+
+.calculator{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    gap: 0em;
+
+    background-color: black;
+    width: 100%;
+    height: 70% ;
+    margin: 0;
+    border-radius: 0 0 20px 20px;
+    padding: 1em;
+} 
+
+.calculator-light-theme{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    gap: 0.5em;
+
+    background-color: rgb(230, 227, 227);
+    width: 100%;
+    height: 70% ;
+    margin: 0;
+    border-radius: 0 0 20px 20px;
+    padding: 1em;
+} 
+
+
+.buttons{
+    background-color: black;
+    display: flex;
+    border-radius: 10px;
+    color: white;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    
+    font-size: 1.5em;
+    border: 1px solid black;
+    margin: 0;
+}
+
+.buttons-light-theme{
+    background-color: grey;
+    display: flex;
+    border-radius: 10px;
+    color: black;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    
+    font-size: 1.5em;
+    border: 1px solid black;
+    margin: 0;
+}
+
+
+.button-click{
+    /*background-color: rgb(62, 61, 61);*/
+    border-radius: 10px;
+    color: orangered;
+    text-align: center;
+    
+    font-size: 1.5em;
+    border: 1px solid black;
+    margin: 0;
+}
+
+#equals{
+    background-color: orangered;
+    display: flex;
+    border-radius: 10px;
+    color: rgb(8, 0, 0);
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    
+    font-size: 1.5em;
+    border: 1px solid black;
+    margin: 0;
+}
+
